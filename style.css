@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img {
+    width: -10%; /* Ubah ukuran gambar */
+    height: auto; /* Biarkan tinggi mengikuti proporsi asli */
+    margin-bottom: -50px; /* Mengurangi jarak antar gambar */
+}
+
+audio {
+    display: none; /* Sembunyikan pemutar audio */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.bunga {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.bunga img {
+    width: 10px; /* Ubah ukuran gambar */
+    height: 10px; /* Ubah ukuran gambar */
+    animation: mekar 2s ease infinite;
+}
+
+@keyframes mekar {
+    0%, 100% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
